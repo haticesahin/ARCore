@@ -7,7 +7,7 @@ using UnityEngine;
 
 public class ObjectSpwaner : MonoBehaviour
 {
-    public GameObject ucgen, kup, dikdortgen, a, b, c, bir, iki, uc, kedi;
+    public GameObject ucgen, kup, dikdortgen, a, b, c, bir, iki, uc, kedi, kaz, papagan, kus, yilan, yunus;
     private PlacementIndicator placementIndicator;
 
     void Start()
@@ -58,6 +58,32 @@ public class ObjectSpwaner : MonoBehaviour
     public void Uc()
     {
         GameObject obj = Instantiate(uc, placementIndicator.transform.position, placementIndicator.transform.rotation);
+    }
+
+    public void Yilan()
+    {
+        GameObject obj = Instantiate(yilan, placementIndicator.transform.position, placementIndicator.transform.rotation);
+    }
+    public void Kedi()
+    {
+        GameObject obj = Instantiate(kedi, placementIndicator.transform.position, placementIndicator.transform.rotation);
+    }
+    public void Kaz()
+    {
+        GameObject obj = Instantiate(kaz, placementIndicator.transform.position, placementIndicator.transform.rotation);
+    }
+    public void Kus()
+    {
+        GameObject obj = Instantiate(kus, placementIndicator.transform.position, placementIndicator.transform.rotation);
+    }
+    public void Yunus()
+    {
+        GameObject obj = Instantiate(yunus, placementIndicator.transform.position, placementIndicator.transform.rotation);
+    }
+
+    public void Papagan()
+    {
+        GameObject obj = Instantiate(papagan, placementIndicator.transform.position, placementIndicator.transform.rotation);
     }
 
     //void Update()
